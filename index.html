@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="Imagem/iconTitle.png" />
+    <title>Pará Lancher</title>
+
+    <link rel="stylesheet" href="landingPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="container container-cabecalho">
+        <div class="logo">
+          <i class="fas fa-utensils"></i>
+          Pará <span>Lancher</span>
+        </div>
+
+        <div class="botao-menu-movel">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <nav class="navegacao">
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#beneficios">Por que nós?</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#perguntas-frequentes">Perguntas Frequentes</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <!-- carrinho icon -->
+        <div class="icone-carrinho" id="iconeCarrinho">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="contador-carrinho">0</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="secao-principal" id="inicio">
+      <div class="container">
+        <h1 class="aparecer">
+          O Sabor Autêntico do Pará, Entregue na Sua Porta.
+        </h1>
+        <p class="aparecer atraso-1">
+          Ingredientes frescos e receitas tradicionais do Pará.
+        </p>
+        <a href="#cardapio" class="botao aparecer atraso-2">Ver Cardápio</a>
+      </div>
+    </section>
+
+    <!-- cardápio -->
+    <section class="secao-cardapio" id="cardapio">
+      <div class="container">
+        <div class="titulo-secao">
+          <h2>Nosso Cardápio</h2>
+          <p>
+            Pratos autênticos da culinária do Norte, preparados com ingredientes
+            frescos e selecionados.
+          </p>
+          <p>Nossas pratos mais populares.</p>
+        </div>
+
+        <div class="itens-cardapio">
+          <!-- tacacá -->
+          <div class="item-cardapio tacaca aparecer">
+            <div class="imagem-item-cardapio"></div>
+            <div class="conteudo-item-cardapio">
+              <h3>Tacacá</h3>
+              <div class="preco">R$ 40,00</div>
+              <button
+                class="botao-adicionar-carrinho"
+                data-item="Tacacá"
+                data-preco="40.00"
+              >
+                <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+              </button>
+            </div>
+          </div>
+
+          <!-- vatapá -->
+          <div class="item-cardapio vatapa aparecer atraso-1">
+            <div class="imagem-item-cardapio"></div>
+            <div class="conteudo-item-cardapio">
+              <h3>Vatapá</h3>
+              <div class="preco">R$ 39,00</div>
+              <button
+                class="botao-adicionar-carrinho"
+                data-item="Vatapá"
+                data-preco="39.00"
+              >
+                <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+              </button>
+            </div>
+          </div>
+
+          <!-- maníçoba -->
+          <div class="item-cardapio manicoba aparecer atraso-2">
+            <div class="imagem-item-cardapio"></div>
+            <div class="conteudo-item-cardapio">
+              <h3>Maníçoba</h3>
+              <div class="preco">R$ 22,00</div>
+              <button
+                class="botao-adicionar-carrinho"
+                data-item="Maníçoba"
+                data-preco="22.00"
+              >
+                <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+              </button>
+            </div>
+          </div>
+
+          <!-- açaí -->
+          <div class="item-cardapio acai aparecer atraso-3">
+            <div class="imagem-item-cardapio"></div>
+            <div class="conteudo-item-cardapio">
+              <h3>Açaí</h3>
+              <div class="preco">R$ 15,00</div>
+              <button
+                class="botao-adicionar-carrinho"
+                data-item="Açaí"
+                data-preco="15.00"
+              >
+                <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+              </button>
+            </div>
+          </div>
+
+          <!-- tambaqui assado -->
+          <div class="item-cardapio tambaqui aparecer atraso-3">
+            <div class="imagem-item-cardapio"></div>
+            <div class="conteudo-item-cardapio">
+              <h3>Tambaqui Assado</h3>
+              <div class="preco">R$ 35,00</div>
+              <button
+                class="botao-adicionar-carrinho"
+                data-item="Tambaqui Assado"
+                data-preco="35.00"
+              >
+                <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+              </button>
+            </div>
+          </div>
+
+          <!-- bolinho pirarucu -->
+          <div class="item-cardapio bolinho aparecer atraso-3">
+            <div class="imagem-item-cardapio"></div>
+            <div class="conteudo-item-cardapio">
+              <h3>Bolinho de Pirarucu</h3>
+              <div class="preco">R$ 20,00</div>
+              <button
+                class="botao-adicionar-carrinho"
+                data-item="Bolinho de Pirarucu"
+                data-preco="20.00"
+              >
+                <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao-chamada-acao">
+      <div class="container">
+        <h2>Pronto para experimentar?</h2>
+        <p>
+          Faça seu pedido agora e receba o autêntico sabor do Pará no conforto
+          da sua casa!
+        </p>
+        <a href="cardapio.html" class="botao botao-chamada-acao">
+          <i class="fas fa-utensils"></i> Fazer Pedido Agora
+        </a>
+      </div>
+    </section>
+
+    <!-- beneficios -->
+    <section class="secao-beneficios" id="beneficios">
+      <div class="container">
+        <div class="titulo-secao">
+          <h2>Por que escolher a Pará Lancher?</h2>
+          <p>Conheça as vantagens de pedir suas refeições conosco</p>
+        </div>
+
+        <div class="grade-beneficios">
+          <div class="cartao-beneficio aparecer">
+            <div class="icone-beneficio">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3>Ingredientes Naturais</h3>
+            <p>
+              Utilizamos apenas ingredientes frescos e naturais, selecionados
+              diretamente de fornecedores locais da região Norte.
+            </p>
+          </div>
+
+          <div class="cartao-beneficio aparecer atraso-1">
+            <div class="icone-beneficio">
+              <i class="fas fa-home"></i>
+            </div>
+            <h3>Sabor Caseiro</h3>
+            <p>
+              Preparamos todos os pratos seguindo receitas tradicionais,
+              garantindo o autêntico sabor caseiro da culinária da região.
+            </p>
+          </div>
+
+          <div class="cartao-beneficio aparecer atraso-2">
+            <div class="icone-beneficio">
+              <i class="fas fa-shipping-fast"></i>
+            </div>
+            <h3>Entrega Rápida</h3>
+            <p>
+              Nossa equipe de entrega está preparada para levar seu pedido
+              quentinho e no tempo certo até a sua porta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- depoimentos -->
+    <section class="secao-depoimentos" id="depoimentos">
+      <div class="container">
+        <div class="titulo-secao">
+          <h2>Depoimentos</h2>
+          <p>
+            O que nossos clientes estão dizendo sobre a experiência Pará Lancher
+          </p>
+        </div>
+        <div class="grade-depoimentos">
+          <!-- d1 -->
+          <div class="cartao-depoimento aparecer">
+            <div class="avaliacao-depoimento">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p class="texto-depoimento">
+              "Delicioso! Sabor autêntico e entrega rápida. Recomendo a todos
+              que querem experimentar a verdadeira culinária nortista sem sair
+              de casa!"
+            </p>
+            <div class="container-autor-depoimento">
+              <div class="avatar-depoimento">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="info-autor-depoimento">
+                <div class="autor-depoimento">Maria Silva</div>
+                <div class="localizacao-depoimento">Belém - PA</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- d2 -->
+          <div class="cartao-depoimento aparecer atraso-1">
+            <div class="avaliacao-depoimento">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="texto-depoimento">
+              "A maníçoba estava incrível — parecia feita pela minha avó. Os
+              ingredientes são frescos e o sabor é inigualável. Já fiz três
+              pedidos este mês!"
+            </p>
+            <div class="container-autor-depoimento">
+              <div class="avatar-depoimento">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="info-autor-depoimento">
+                <div class="autor-depoimento">José Rodrigues</div>
+                <div class="localizacao-depoimento">Belém - PA</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- d3 -->
+          <div class="cartao-depoimento aparecer atraso-2">
+            <div class="avaliacao-depoimento">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p class="texto-depoimento">
+              "Ótimo atendimento e porções generosas. O tacacá chegou quentinho
+              e muito saboroso. Sem dúvidas voltarei a pedir!"
+            </p>
+            <div class="container-autor-depoimento">
+              <div class="avatar-depoimento">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="info-autor-depoimento">
+                <div class="autor-depoimento">Ana Lima</div>
+                <div class="localizacao-depoimento">Belém - PA</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- perguntas -->
+    <section class="secao-perguntas-frequentes" id="perguntas-frequentes">
+      <div class="container">
+        <div class="titulo-secao">
+          <h2>Perguntas Frequentes</h2>
+          <p>Dúvidas comuns sobre pedidos, entregas e nossos serviços</p>
+        </div>
+
+        <div class="lista-perguntas-frequentes">
+          <!-- p1 -->
+          <div class="item-pergunta-frequente aparecer">
+            <button class="botao-pergunta-frequente">
+              <div class="conteudo-botao-pergunta">
+                <i class="fas fa-shopping-cart icone-pergunta"></i>
+                Como faço um pedido?
+              </div>
+            </button>
+            <div class="resposta-pergunta-frequente">
+              <p>
+                1. Navegue pelo nosso cardápio e escolha os pratos desejados
+              </p>
+              <p>2. Clique em "Adicionar ao Carrinho" nos itens escolhidos</p>
+              <p>3. Acesse o carrinho (ícone no canto superior direito)</p>
+              <p>4. Revise seu pedido e clique em "Finalizar Pedido"</p>
+              <p>
+                5. Escolha a forma de pagamento e confirme seu endereço de
+                entrega
+              </p>
+            </div>
+          </div>
+
+          <!-- p2  -->
+          <div class="item-pergunta-frequente aparecer atraso-1">
+            <button class="botao-pergunta-frequente">
+              <div class="conteudo-botao-pergunta">
+                <i class="fas fa-truck icone-pergunta"></i>
+                Vocês fazem entregas fora de Belém?
+              </div>
+            </button>
+            <div class="resposta-pergunta-frequente">
+              <p>
+                <strong
+                  >No momento, nossas entregas são apenas em Belém e região
+                  metropolitana.</strong
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- p3  -->
+          <div class="item-pergunta-frequente aparecer atraso-2">
+            <button class="botao-pergunta-frequente">
+              <div class="conteudo-botao-pergunta">
+                <i class="fas fa-credit-card icone-pergunta"></i>
+                Quais formas de pagamento são aceitas?
+              </div>
+            </button>
+            <div class="resposta-pergunta-frequente">
+              <p>Aceitamos as seguintes formas de pagamento:</p>
+              <p>
+                <strong
+                  >Dinheiro, Pix e Cartão de crédito/débito (Visa, MasterCard,
+                  Elo)</strong
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- p4 -->
+          <div class="item-pergunta-frequente aparecer atraso-3">
+            <button class="botao-pergunta-frequente">
+              <div class="conteudo-botao-pergunta">
+                <i class="fas fa-utensils icone-pergunta"></i>
+                Os pratos contêm ingredientes específicos?
+              </div>
+            </button>
+            <div class="resposta-pergunta-frequente">
+              <p>
+                Todos nossos pratos são preparados com ingredientes frescos e
+                autênticos da região Norte. Se você possui restrições
+                alimentares ou alergias, entre em contato conosco antes de fazer
+                o pedido para verificarmos a possibilidade de adaptações.
+              </p>
+              <p style="font-weight: bold">
+                Importante: Alguns pratos contêm camarão, peixe e outros frutos
+                do mar.
+              </p>
+            </div>
+          </div>
+
+          <!-- p5 -->
+          <div class="item-pergunta-frequente aparecer atraso-4">
+            <button class="botao-pergunta-frequente">
+              <div class="conteudo-botao-pergunta">
+                <i class="fas fa-clock icone-pergunta"></i>
+                Qual o horário de funcionamento?
+              </div>
+            </button>
+            <div class="resposta-pergunta-frequente">
+              <p>Funcionamos nos seguintes horários:</p>
+              <p><strong>Segunda a Sexta:</strong> 10h às 23h</p>
+              <p><strong>Sábado:</strong> 10h às 00h</p>
+              <p><strong>Domingo e Feriados:</strong> 11h às 22h</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="decoracao">
+          <i class="fas fa-leaf"></i>
+          <span>Ainda tem dúvidas? Entre em contato conosco!</span>
+          <i class="fas fa-leaf"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- rodapé -->
+    <footer class="rodape" id="contato">
+      <div class="container">
+        <div class="conteudo-rodape">
+          <div class="coluna-rodape">
+            <h3>Nosso Objetivo</h3>
+            <p style="text-align: justify">
+              O objetivo da Pará Lancher é de levar o autêntico sabor desta
+              culinária para toda a cidade de Belém, com ingredientes frescos e
+              receitas tradicionais do Pará.
+            </p>
+          </div>
+
+          <div class="coluna-rodape">
+            <h3>Contato</h3>
+            <ul class="lista-contato">
+              <li><i class="fas fa-phone"></i> (91) 2345-6789</li>
+              <li>
+                <i class="fas fa-envelope"></i> contato@paralancher.com.br
+              </li>
+              <li><i class="fas fa-map-marker-alt"></i> Belém - Pará</li>
+            </ul>
+          </div>
+
+          <div class="coluna-rodape">
+            <h3>Links</h3>
+            <ul class="lista-links-rodape">
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="cardapio.html">Cardápio</a></li>
+              <li><a href="#beneficios">Por que nós?</a></li>
+              <li><a href="sobre.html">Sobre nós</a></li>
+              <li>
+                <a href="historia_dos_pratos.html">Historia dos Pratos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="direitos-autorais">
+          <p>© 2025 Pará Lancher. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="icone-carrinho" id="iconeCarrinho">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="contador-carrinho">0</span>
+    </div>
+    <div class="modal-carrinho" id="modalCarrinho">
+      <div class="conteudo-carrinho">
+        <div class="cabecalho-carrinho">
+          <h3>Meu Carrinho</h3>
+          <button class="botao-fechar-carrinho" id="botaoFecharCarrinho">
+            &times;
+          </button>
+        </div>
+
+        <!-- itens do carrinho -->
+        <div class="itens-carrinho" id="itensCarrinho">
+          <div class="carrinho-vazio">
+            <i class="fas fa-shopping-cart"></i>
+            <p>Seu carrinho está vazio</p>
+          </div>
+        </div>
+
+        <!-- total carrinho -->
+        <div class="total-carrinho" id="totalCarrinho" style="display: none">
+          <span>Total:</span>
+          <span>R$ <span id="valorTotal">0,00</span></span>
+        </div>
+
+        <!-- finalizar peedido -->
+        <button
+          class="botao"
+          id="botaoFinalizarPedido"
+          style="width: 100%; display: none"
+        >
+          Finalizar Pedido
+        </button>
+      </div>
+    </div>
+
+    <script src="landingPage.js"></script>
+  </body>
+</html>

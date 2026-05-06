@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="Imagem/iconTitle.png" />
+    <title>História dos Pratos - Pará Lancher</title>
+
+    <link rel="stylesheet" href="landingPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="cabecalho-historia">
+      <div class="container">
+        <a href="landingPage.html" class="botao-voltar">
+          <i class="fas fa-arrow-left"></i> Voltar para Início
+        </a>
+        <h2>Pará Lancher</h2>
+        <div></div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="titulo-historia">
+        <h1>História dos Pratos Paraenses</h1>
+        <p>
+          Descubra as origens, tradições e curiosidades por trás de cada prato
+        </p>
+      </div>
+
+      <!-- navegação entre pratos -->
+      <div class="navegacao-pratos">
+        <button class="botao-prato ativo" data-prato="tacaca">Tacacá</button>
+        <button class="botao-prato" data-prato="vatapa">Vatapá</button>
+        <button class="botao-prato" data-prato="manicoba">Maníçoba</button>
+        <button class="botao-prato" data-prato="acai">Açaí</button>
+        <button class="botao-prato" data-prato="tambaqui">Tambaqui</button>
+        <button class="botao-prato" data-prato="pato">Pato no Tucupi</button>
+      </div>
+
+      <div class="conteudo-historia">
+        <!-- tacacá -->
+        <section class="secao-prato ativo" id="tacaca">
+          <div class="cabecalho-prato">
+            <div class="icone-prato">
+              <i class="fas fa-bowl-hot"></i>
+            </div>
+            <div class="titulo-prato">
+              <h2>Tacacá</h2>
+              <p class="origem-prato">Origem: Indígena Amazônica</p>
+            </div>
+          </div>
+
+          <div class="conteudo-prato">
+            <div class="texto-historia">
+              <p>
+                O <strong>Tacacá</strong> é uma das mais antigas e tradicionais
+                receitas da culinária amazônica, com origem nas tribos indígenas
+                da região. Seu nome vem do tupi "taka'ká", que significa
+                "alimento feito de mandioca".
+              </p>
+              <p>
+                Os indígenas preparavam uma sopa com o líquido extraído da
+                mandioca brava (tucupi), que era fermentado por dias para
+                eliminar o ácido cianídrico, substância tóxica presente na
+                mandioca. A receita foi adaptada com a chegada dos portugueses,
+                que adicionaram o camarão seco.
+              </p>
+              <p>
+                Tradicionalmente servido em cuias, o Tacacá é mais consumido no
+                final da tarde e à noite, sendo considerado um "lanche da noite"
+                em muitas cidades do Pará.
+              </p>
+
+              <div class="destaque-frase">
+                "Não é apenas uma sopa, é uma experiência sensorial completa: o
+                calor do caldo, o formigamento do jambu, o sabor do tucupi e a
+                textura da goma."
+              </div>
+            </div>
+
+            <div class="curiosidades">
+              <h3><i class="fas fa-lightbulb"></i> Curiosidades</h3>
+              <ul>
+                <li>O jambu causa uma leve anestesia na boca</li>
+                <li>Deve ser bebido diretamente da cuia</li>
+                <li>Tradicionalmente não se usa talher</li>
+                <li>É considerado afrodisíaco por algumas culturas</li>
+                <li>Serve cerca de 30 calorias por 100ml</li>
+              </ul>
+
+              <div class="imagem-prato">
+                <img
+                  src="https://comidaspelomundo.com/wp-content/uploads/2023/07/tacaca.jpg"
+                  alt="Tacacá tradicional servido em cuia"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="linha-do-tempo">
+            <h3>Evolução do Tacacá</h3>
+            <div class="itens-tempo">
+              <div class="item-tempo">
+                <div class="ponto-tempo"></div>
+                <div class="ano-tempo">Séc. XVI</div>
+                <div class="desc-tempo">Preparo indígena básico</div>
+              </div>
+              <div class="item-tempo">
+                <div class="ponto-tempo"></div>
+                <div class="ano-tempo">Séc. XVIII</div>
+                <div class="desc-tempo">Adição do camarão seco</div>
+              </div>
+              <div class="item-tempo">
+                <div class="ponto-tempo"></div>
+                <div class="ano-tempo">1950</div>
+                <div class="desc-tempo">Popularização nas cidades</div>
+              </div>
+              <div class="item-tempo">
+                <div class="ponto-tempo"></div>
+                <div class="ano-tempo">Hoje</div>
+                <div class="desc-tempo">Ícone da culinária paraense</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- vatapá -->
+        <section class="secao-prato" id="vatapa">
+          <div class="cabecalho-prato">
+            <div class="icone-prato">
+              <i class="fas fa-mortar-pestle"></i>
+            </div>
+            <div class="titulo-prato">
+              <h2>Vatapá</h2>
+              <p class="origem-prato">
+                Origem: África (com influência indígena)
+              </p>
+            </div>
+          </div>
+
+          <div class="conteudo-prato">
+            <div class="texto-historia">
+              <p>
+                O <strong>Vatapá</strong> é um prato de origem africana, trazido
+                ao Brasil pelos escravizados da região da Costa da Mina, atual
+                Nigéria e Benin. No entanto, a versão paraense sofreu uma
+                adaptação única com ingredientes locais.
+              </p>
+              <p>
+                Enquanto no Nordeste o vatapá é feito com pão, no Pará ele
+                ganhou uma textura diferente com o uso de farinha de trigo ou de
+                arroz. A adição do leite de coco e da castanha-do-pará deu ao
+                prato uma identidade verdadeiramente amazônica.
+              </p>
+              <p>
+                Tradicionalmente, o vatapá paraense é menos cremoso que o baiano
+                e tem uma cor mais clara devido ao maior uso do leite de coco. É
+                frequentemente servido com arroz branco e frango ou peixe.
+              </p>
+
+              <div class="destaque-frase">
+                "Uma fusão perfeita entre a cultura africana e os ingredientes
+                amazônicos, criando um prato único no mundo."
+              </div>
+            </div>
+
+            <div class="curiosidades">
+              <h3><i class="fas fa-lightbulb"></i> Curiosidades</h3>
+              <ul>
+                <li>Existem mais de 5 variações regionais no Brasil</li>
+                <li>A versão paraense é menos picante</li>
+                <li>Tradicionalmente feito em panela de barro</li>
+                <li>É um prato comum em festas religiosas</li>
+                <li>Pode ser servido quente ou frio</li>
+              </ul>
+
+              <div class="imagem-prato">
+                <img
+                  src="https://www.correiodopovo.com.br/image/contentid/policy:1.1627833:1752324401/vatapa.jpg?a=191%3A100&q=0.6&w=1200&$p$a$q$w=3c63c66"
+                  alt="Vatapá paraense tradicional"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- maníçoba -->
+        <section class="secao-prato" id="manicoba">
+          <div class="cabecalho-prato">
+            <div class="icone-prato">
+              <i class="fas fa-tree"></i>
+            </div>
+            <div class="titulo-prato">
+              <h2>Maníçoba</h2>
+              <p class="origem-prato">
+                Origem: Indígena (com influência portuguesa)
+              </p>
+            </div>
+          </div>
+
+          <div class="conteudo-prato">
+            <div class="texto-historia">
+              <p>
+                A <strong>Maníçoba</strong> é considerada uma das receitas mais
+                complexas e trabalhosas da culinária brasileira. Sua origem é
+                indígena, mas foi profundamente modificada pelos portugueses que
+                adicionaram as carnes suínas.
+              </p>
+              <p>
+                O segredo da maníçoba está no preparo das folhas de maniva
+                (mandioca brava), que precisam ser cozidas por
+                <strong>7 dias seguidos</strong> para eliminar o ácido
+                cianídrico, substância extremamente tóxica. Este longo processo
+                de cozimento é que dá ao prato seu sabor único e sua cor escura
+                característica.
+              </p>
+              <p>
+                Por exigir tanto tempo de preparo, a maníçoba é tradicionalmente
+                um prato de festas e comemorações, especialmente durante o Círio
+                de Nazaré, a maior festa religiosa do Pará.
+              </p>
+
+              <div class="destaque-frase">
+                "Um prato que exige paciência e tradição - 7 dias de preparo
+                para transformar algo potencialmente tóxico em uma iguaria
+                única."
+              </div>
+            </div>
+
+            <div class="curiosidades">
+              <h3><i class="fas fa-lightbulb"></i> Curiosidades</h3>
+              <ul>
+                <li>Leva até 7 dias para ficar pronto</li>
+                <li>Conhecida como "feijoada paraense"</li>
+                <li>Só é feita por cozinheiras experientes</li>
+                <li>É servida principalmente em ocasiões especiais</li>
+                <li>Tem alto valor proteico</li>
+              </ul>
+
+              <div class="imagem-prato">
+                <img
+                  src="https://blogger.googleusercontent.com/img/proxy/AVvXsEj3s0nx6rGAuhaX6P53p4h-OiRizYGXaZ2DehitDxavkgxqR7qCbVMWWQOgJkOJkA0_2lfQvoWbvBCxYPjQtWUhI-_8Ef_Xh3FqE9ICXQnRisZY9v7gz2w-WUrOtVKUjyDFOuHRrQ1KS_UkKSAAO1xQwX4RFGm0giSxpNxDIzO3lEz1LNLKRx4l_byoRkoJvQf-YZxAy77TltvI18sj1K4v8rFv91accoJQMkMjgRASjy7peblRGuaW4-24iyi7tQvwoqs=s0-d-e1-ft"
+                  alt="Maníçoba tradicional"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- açaí -->
+        <section class="secao-prato" id="acai">
+          <div class="cabecalho-prato">
+            <div class="icone-prato">
+              <i class="fas fa-wine-bottle"></i>
+            </div>
+            <div class="titulo-prato">
+              <h2>Açaí</h2>
+              <p class="origem-prato">Origem: Indígena Amazônica</p>
+            </div>
+          </div>
+
+          <div class="conteudo-prato">
+            <div class="texto-historia">
+              <p>
+                O <strong>Açaí</strong> é mais do que uma fruta para os
+                paraenses - é um estilo de vida. Consumido há séculos pelas
+                tribos indígenas da Amazônia, o açaí era conhecido como
+                "içá-çai", que na língua tupi significa "fruta que chora".
+              </p>
+              <p>
+                Os indígenas descobriram que o açaí era uma fonte de energia
+                extraordinária. Conta a lenda que durante um período de fome, o
+                chefe Itaki ordenou que todos os recém-nascidos fossem
+                sacrificados. Sua filha, Iaçã, chorou tanto que sob uma palmeira
+                apareceu uma fruta escura - o açaí - que salvou a tribo.
+              </p>
+              <p>
+                Diferente da versão doce e gelada popular no Sul do Brasil, no
+                Pará o açaí é consumido puro, sem açúcar, acompanhado de farinha
+                de tapioca ou mandioca, e às vezes peixe ou camarão.
+              </p>
+
+              <div class="destaque-frase">
+                "No Pará, açaí não é sobremesa. É refeição. É cultura. É
+                identidade."
+              </div>
+            </div>
+
+            <div class="curiosidades">
+              <h3><i class="fas fa-lightbulb"></i> Curiosidades</h3>
+              <ul>
+                <li>Tem 33 vezes mais antioxidantes que a uva</li>
+                <li>É considerado um dos alimentos mais completos</li>
+                <li>Uma palmeira produz até 8 cachos por ano</li>
+                <li>Os caroços são usados como artesanato</li>
+                <li>É colhido por "peconheiros" que sobem nas palmeiras</li>
+              </ul>
+
+              <div class="imagem-prato">
+                <img
+                  src="https://www.mundoviajante.com/wp-content/uploads/2023/11/comidas_tipicas_do_amazonas.jpg"
+                  alt="Açaí tradicional paraense"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="linha-do-tempo">
+            <h3>Popularização do Açaí</h3>
+            <div class="itens-tempo">
+              <div class="item-tempo">
+                <div class="ponto-tempo"></div>
+                <div class="ano-tempo">Pré-Colomb.</div>
+                <div class="desc-tempo">Consumo indígena</div>
+              </div>
+              <div class="item-tempo">
+                <div class="ponto-tempo"></div>
+                <div class="ano-tempo">Séc. XX</div>
+                <div class="desc-tempo">Popular no Pará</div>
+              </div>
+              <div class="item-tempo">
+                <div class="ponto-tempo"></div>
+                <div class="ano-tempo">1980</div>
+                <div class="desc-tempo">Chega ao Rio/São Paulo</div>
+              </div>
+              <div class="item-tempo">
+                <div class="ponto-tempo"></div>
+                <div class="ano-tempo">2000+</div>
+                <div class="desc-tempo">Fenômeno mundial</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- tambaqui assado -->
+        <section class="secao-prato" id="tambaqui">
+          <div class="cabecalho-prato">
+            <div class="icone-prato">
+              <i class="fas fa-fish"></i>
+            </div>
+            <div class="titulo-prato">
+              <h2>Tambaqui</h2>
+              <p class="origem-prato">Origem: Culinária Ribeirinha</p>
+            </div>
+          </div>
+
+          <div class="conteudo-prato">
+            <div class="texto-historia">
+              <p>
+                O <strong>Tambaqui</strong> é o rei dos rios amazônicos e o
+                peixe mais apreciado da região. Conhecido por sua carne saborosa
+                e pelas famosas "costelas", o tambaqui pode chegar a 1 metro de
+                comprimento e 30 kg.
+              </p>
+              <p>
+                Os ribeirinhos descobriram que o tambaqui tinha uma
+                característica única: suas costelas são grandes e carnudas,
+                quase como costeletas de porco. Isso fez com que o peixe se
+                tornasse especialmente valorizado.
+              </p>
+              <p>
+                Tradicionalmente, o tambaqui é assado na brasa, temperado apenas
+                com sal grosso e limão. A simplicidade do preparo ressalta o
+                sabor natural da carne. É comum servir com farofa, vinagrete e
+                arroz branco.
+              </p>
+
+              <div class="destaque-frase">
+                "Um peixe tão grande que tem costelas, e tão saboroso que não
+                precisa de muitos temperos para ser uma iguaria."
+              </div>
+            </div>
+
+            <div class="curiosidades">
+              <h3><i class="fas fa-lightbulb"></i> Curiosidades</h3>
+              <ul>
+                <li>Tem dentes que parecem humanos</li>
+                <li>Come frutas que caem nos rios</li>
+                <li>Sua gordura é considerada a melhor</li>
+                <li>É conhecido como "porco d'água"</li>
+                <li>Pode viver mais de 20 anos</li>
+              </ul>
+
+              <div class="imagem-prato">
+                <img
+                  src="https://jpimg.com.br/uploads/2024/04/5-receitas-tipicas-do-amazonas.jpg"
+                  alt="Tambaqui assado tradicional"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- pato no tucupi -->
+        <section class="secao-prato" id="pato">
+          <div class="cabecalho-prato">
+            <div class="icone-prato">
+              <i class="fas fa-drumstick-bite"></i>
+            </div>
+            <div class="titulo-prato">
+              <h2>Pato no Tucupi</h2>
+              <p class="origem-prato">Origem: Fusão indígena-portuguesa</p>
+            </div>
+          </div>
+
+          <div class="conteudo-prato">
+            <div class="texto-historia">
+              <p>
+                O <strong>Pato no Tucupi</strong> é considerado o prato mais
+                sofisticado da culinária paraense, tradicionalmente servido em
+                ocasiões especiais como o Círio de Nazaré e o Natal.
+              </p>
+              <p>
+                A receita representa uma fusão perfeita: os indígenas forneceram
+                o tucupi e o jambu, enquanto os portugueses trouxeram a técnica
+                de assar o pato. O resultado é um prato complexo com sabores
+                únicos.
+              </p>
+              <p>
+                O preparo é meticuloso: o pato é assado até ficar crocante,
+                depois cozido no tucupi, e finalmente servido sobre arroz branco
+                com folhas de jambu. Cada etapa tem seu propósito e timing
+                específico.
+              </p>
+
+              <div class="destaque-frase">
+                "A suprema elegância da culinária paraense - onde a simplicidade
+                dos ingredientes encontra a complexidade das técnicas."
+              </div>
+            </div>
+
+            <div class="curiosidades">
+              <h3><i class="fas fa-lightbulb"></i> Curiosidades</h3>
+              <ul>
+                <li>Prato oficial do Círio de Nazaré</li>
+                <li>Considerado patrimônio cultural</li>
+                <li>Exige até 3 dias de preparo</li>
+                <li>É servido com as "mãos de pato" separadas</li>
+                <li>Um dos pratos mais caros da região</li>
+              </ul>
+
+              <div class="imagem-prato">
+                <img
+                  src="https://s2-receitas.glbimg.com/ALXrZAv5zhPryp01S50iTITaWos=/0x0:1280x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2024/8/f/yp0X0ORrAx2GlAKKv2xQ/pato-no-tucupi-receita.jpg"
+                  alt="Pato no Tucupi tradicional"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="rodape-historia">
+        <h3>Preservando Nossa História Gastronômica</h3>
+        <p>
+          Cada prato conta uma história - de povos indígenas, de africanos
+          trazidos contra sua vontade, de portugueses que aqui se estabeleceram,
+          e da incrível capacidade do povo paraense de transformar ingredientes
+          locais em tesouros culinários.
+        </p>
+        <p style="margin-top: 20px">
+          <strong
+            >Na Pará Lancher, não servimos apenas comida. Servimos história,
+            tradição e cultura em cada prato.</strong
+          >
+        </p>
+        <a href="cardapio.html" class="botao" style="margin-top: 25px">
+          <i class="fas fa-utensils"></i> Experimente Nossos Pratos
+        </a>
+      </div>
+    </main>
+
+    <footer class="rodape">
+      <div class="container">
+        <div class="direitos-autorais">
+          <p>© 2025 Pará Lancher. Todos os direitos reservados.</p>
+          <p style="margin-top: 10px; font-size: 0.9rem">
+            <a
+              href="sobre.html"
+              style="color: var(--cor-secundaria); text-decoration: none"
+              >Sobre Nós</a
+            >
+            |
+            <a
+              href="historia-pratos.html"
+              style="color: var(--cor-secundaria); text-decoration: none"
+              >História dos Pratos</a
+            >
+            |
+            <a
+              href="cardapio.html"
+              style="color: var(--cor-secundaria); text-decoration: none"
+              >Cardápio</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="landingPage.js"></script>
+  </body>
+</html>

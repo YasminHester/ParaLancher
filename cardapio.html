@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="Imagem/iconTitle.png" />
+    <title>Cardápio Completo - Pará Lancher</title>
+
+    <link rel="stylesheet" href="landingPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="cabecalho-cardapio">
+      <div class="container">
+        <a href="index.html" class="botao-voltar">
+          <i class="fas fa-arrow-left"></i> Voltar para Início
+        </a>
+        <h2>Pará Lancher</h2>
+        <div class="icone-carrinho" id="iconeCarrinho">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="contador-carrinho">0</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="titulo-cardapio">
+        <h1>Cardápio Completo</h1>
+        <p>Conheça todos os nossos pratos autênticos da culinária paraense</p>
+      </div>
+
+      <div class="itens-cardapio-completo">
+        <!-- tacacá -->
+        <div class="item-cardapio-grande tacaca">
+          <div class="imagem-item-grande"></div>
+          <div class="conteudo-item-grande">
+            <h3>Tacacá</h3>
+            <p class="descricao-item">
+              Caldo quente à base de tucupi, goma de mandioca, camarões secos e
+              jambu. Tradicional e aromático, perfeito para os dias mais
+              frescos.
+            </p>
+            <span class="preco-grande">R$ 40,00</span>
+            <div class="controles-item">
+              <div class="controle-quantidade">
+                <button class="botao-quantidade diminuir">-</button>
+                <span class="quantidade-atual">1</span>
+                <button class="botao-quantidade aumentar">+</button>
+              </div>
+              <button
+                class="botao-adicionar-direto"
+                data-item="Tacacá"
+                data-preco="40.00"
+              >
+                <i class="fas fa-cart-plus"></i> Adicionar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- vatapá -->
+        <div class="item-cardapio-grande vatapa">
+          <div class="imagem-item-grande"></div>
+          <div class="conteudo-item-grande">
+            <h3>Vatapá</h3>
+            <p class="descricao-item">
+              Pasta cremosa de pão, camarões, amendoim, castanha e leite de
+              coco. Rico em sabor e textura, acompanha arroz branco.
+            </p>
+            <span class="preco-grande">R$ 39,00</span>
+            <div class="controles-item">
+              <div class="controle-quantidade">
+                <button class="botao-quantidade diminuir">-</button>
+                <span class="quantidade-atual">1</span>
+                <button class="botao-quantidade aumentar">+</button>
+              </div>
+              <button
+                class="botao-adicionar-direto"
+                data-item="Vatapá"
+                data-preco="39.00"
+              >
+                <i class="fas fa-cart-plus"></i> Adicionar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- maníçoba -->
+        <div class="item-cardapio-grande manicoba">
+          <div class="imagem-item-grande"></div>
+          <div class="conteudo-item-grande">
+            <h3>Maníçoba</h3>
+            <p class="descricao-item">
+              Prato típico feito com folhas de maniva cozidas por 7 dias,
+              acompanhado de carnes suínas, bacon e arroz.
+            </p>
+            <span class="preco-grande">R$ 22,00</span>
+            <div class="controles-item">
+              <div class="controle-quantidade">
+                <button class="botao-quantidade diminuir">-</button>
+                <span class="quantidade-atual">1</span>
+                <button class="botao-quantidade aumentar">+</button>
+              </div>
+              <button
+                class="botao-adicionar-direto"
+                data-item="Maníçoba"
+                data-preco="22.00"
+              >
+                <i class="fas fa-cart-plus"></i> Adicionar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- açaí -->
+        <div class="item-cardapio-grande acai">
+          <div class="imagem-item-grande"></div>
+          <div class="conteudo-item-grande">
+            <h3>Açaí Tradicional</h3>
+            <p class="descricao-item">
+              Açaí puro batido na hora, sem adição de açúcar. Servido com
+              farinha de tapioca ou acompanhamentos à escolha.
+            </p>
+            <span class="preco-grande">R$ 15,00</span>
+            <div class="controles-item">
+              <div class="controle-quantidade">
+                <button class="botao-quantidade diminuir">-</button>
+                <span class="quantidade-atual">1</span>
+                <button class="botao-quantidade aumentar">+</button>
+              </div>
+              <button
+                class="botao-adicionar-direto"
+                data-item="Açaí"
+                data-preco="15.00"
+              >
+                <i class="fas fa-cart-plus"></i> Adicionar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- tambaqui assado -->
+        <div class="item-cardapio-grande tambaqui">
+          <div class="imagem-item-grande"></div>
+          <div class="conteudo-item-grande">
+            <h3>Tambaqui Assado</h3>
+            <p class="descricao-item">
+              Tambaqui inteiro assado na brasa com temperos especiais. Acompanha
+              farofa, vinagrete e arroz branco.
+            </p>
+            <span class="preco-grande">R$ 35,00</span>
+            <div class="controles-item">
+              <div class="controle-quantidade">
+                <button class="botao-quantidade diminuir">-</button>
+                <span class="quantidade-atual">1</span>
+                <button class="botao-quantidade aumentar">+</button>
+              </div>
+              <button
+                class="botao-adicionar-direto"
+                data-item="Tambaqui Assado"
+                data-preco="35.00"
+              >
+                <i class="fas fa-cart-plus"></i> Adicionar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- bolinho de pirarucu -->
+        <div class="item-cardapio-grande bolinho">
+          <div class="imagem-item-grande"></div>
+          <div class="conteudo-item-grande">
+            <h3>Bolinho de Pirarucu</h3>
+            <p class="descricao-item">
+              Bolinhos crocantes de pirarucu desfiado, temperados com
+              cheiro-verde e servidos com molho tártaro.
+            </p>
+            <span class="preco-grande">R$ 20,00</span>
+            <div class="controles-item">
+              <div class="controle-quantidade">
+                <button class="botao-quantidade diminuir">-</button>
+                <span class="quantidade-atual">1</span>
+                <button class="botao-quantidade aumentar">+</button>
+              </div>
+              <button
+                class="botao-adicionar-direto"
+                data-item="Bolinho de Pirarucu"
+                data-preco="20.00"
+              >
+                <i class="fas fa-cart-plus"></i> Adicionar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- camu -->
+        <div class="item-cardapio-grande camu-camu">
+          <div class="imagem-item-grande"></div>
+          <div class="conteudo-item-grande">
+            <h3>Suco de Camu Camu</h3>
+            <p class="descricao-item">
+              Suco natural da fruta amazônica mais rica em vitamina C do mundo.
+              Refrescante e extremamente saudável.
+            </p>
+            <span class="preco-grande">R$ 12,00</span>
+            <div class="controles-item">
+              <div class="controle-quantidade">
+                <button class="botao-quantidade diminuir">-</button>
+                <span class="quantidade-atual">1</span>
+                <button class="botao-quantidade aumentar">+</button>
+              </div>
+              <button
+                class="botao-adicionar-direto"
+                data-item="Suco de Camu Camu"
+                data-preco="12.00"
+              >
+                <i class="fas fa-cart-plus"></i> Adicionar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- pato no tucupi -->
+        <div class="item-cardapio-grande pato-no-tucupi">
+          <div class="imagem-item-grande"></div>
+          <div class="conteudo-item-grande">
+            <h3>Pato no Tucupi</h3>
+            <p class="descricao-item">
+              Pato assado servido com tucupi, jambu e arroz branco. Prato
+              tradicional das festas paraenses.
+            </p>
+            <span class="preco-grande">R$ 45,00</span>
+            <div class="controles-item">
+              <div class="controle-quantidade">
+                <button class="botao-quantidade diminuir">-</button>
+                <span class="quantidade-atual">1</span>
+                <button class="botao-quantidade aumentar">+</button>
+              </div>
+              <button
+                class="botao-adicionar-direto"
+                data-item="Pato no Tucupi"
+                data-preco="45.00"
+              >
+                <i class="fas fa-cart-plus"></i> Adicionar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="secao-combos">
+        <div class="titulo-secao">
+          <h2>Combos Especiais</h2>
+          <p>Pratos combinados para uma experiência completa</p>
+        </div>
+
+        <div class="combos-cardapio">
+          <div class="combo-item">
+            <div class="combo-destaque">Mais Popular</div>
+            <div
+              class="imagem-combo"
+              style="
+                background-image: url('https://jpimg.com.br/uploads/2024/04/5-receitas-tipicas-do-amazonas.jpg');
+              "
+            ></div>
+            <div class="conteudo-combo">
+              <h3>Combo Família</h3>
+              <ul>
+                <li>Tacacá (2 porções)</li>
+                <li>Tambaqui Assado</li>
+                <li>Vatapá</li>
+                <li>Açaí (4 porções)</li>
+                <li>Bolinho de Pirarucu (8 unidades)</li>
+              </ul>
+              <div>
+                <span class="preco-original">R$ 180,00</span>
+                <span class="preco-combo">R$ 150,00</span>
+                <div class="economia">Economize R$ 30,00</div>
+              </div>
+              <button
+                class="botao-adicionar-direto"
+                data-item="Combo Família"
+                data-preco="150.00"
+              >
+                <i class="fas fa-cart-plus"></i> Adicionar Combo
+              </button>
+            </div>
+          </div>
+
+          <div class="combo-item">
+            <div class="combo-destaque">Para 2 Pessoas</div>
+            <div
+              class="imagem-combo"
+              style="
+                background-image: url('https://www.mundoviajante.com/wp-content/uploads/2023/11/comidas_tipicas_do_amazonas.jpg');
+              "
+            ></div>
+            <div class="conteudo-combo">
+              <h3>Combo Paraense</h3>
+              <ul>
+                <li>Pato no Tucupi</li>
+                <li>Maníçoba</li>
+                <li>Açaí (2 porções)</li>
+                <li>Suco de Camu Camu (2 copos)</li>
+              </ul>
+              <div>
+                <span class="preco-original">R$ 110,00</span>
+                <span class="preco-combo">R$ 95,00</span>
+                <div class="economia">Economize R$ 15,00</div>
+              </div>
+              <button
+                class="botao-adicionar-direto"
+                data-item="Combo Paraense"
+                data-preco="95.00"
+              >
+                <i class="fas fa-cart-plus"></i> Adicionar Combo
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- rodapé cardápio -->
+    <footer class="rodape-cardapio">
+      <div class="container">
+        <div class="info-entrega">
+          <div class="info-item">
+            <i class="fas fa-shipping-fast"></i>
+            <div>
+              <h4>Entrega Rápida</h4>
+              <p>60-70 minutos</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Telefone</h4>
+              <p>(91) 2345-6789</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>Horário</h4>
+              <p>10h-23h (Seg-Sex)</p>
+            </div>
+          </div>
+        </div>
+        <p>
+          © 2025 Pará Lancher. Cardápio sujeito a alteração sem aviso prévio.
+        </p>
+      </div>
+    </footer>
+
+    <div class="icone-carrinho" id="iconeCarrinho">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="contador-carrinho">0</span>
+    </div>
+    <div class="modal-carrinho" id="modalCarrinho">
+      <div class="conteudo-carrinho">
+        <div class="cabecalho-carrinho">
+          <h3>Meu Carrinho</h3>
+          <button class="botao-fechar-carrinho" id="botaoFecharCarrinho">
+            &times;
+          </button>
+        </div>
+        <div class="itens-carrinho" id="itensCarrinho">
+          <div class="carrinho-vazio">
+            <i class="fas fa-shopping-cart"></i>
+            <p>Seu carrinho está vazio</p>
+          </div>
+        </div>
+        <div class="total-carrinho" id="totalCarrinho" style="display: none">
+          <span>Total:</span>
+          <span>R$ <span id="valorTotal">0,00</span></span>
+        </div>
+        <button
+          class="botao"
+          id="botaoFinalizarPedido"
+          style="width: 100%; display: none"
+        >
+          Finalizar Pedido
+        </button>
+      </div>
+    </div>
+
+    <script src="landingPage.js"></script>
+  </body>
+</html>
